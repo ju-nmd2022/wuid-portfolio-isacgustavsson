@@ -35,7 +35,7 @@ html {
   justify-content: space-between;
   align-content: center;
 
-  background: url(/images/code1400.jpg) center;
+  background: url("/images/code1400.jpg") center;
   background-size: cover;
   background-position: center;
   }
