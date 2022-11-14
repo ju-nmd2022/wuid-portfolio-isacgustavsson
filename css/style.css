@@ -1,83 +1,125 @@
-@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  font-family: "Roboto", "sans-serif";
 }
 
-body {
-  font-family: "Readex Pro", "sans-serif";
+html {
+  scroll-behavior: smooth;
+  background-color: rgba(90, 0, 180, 0.8);
 }
 
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  width: auto;
-}
-.navbar {
-  background-color: orangered;
-  color: #fff;
-  height: 150px;
-  width: 100%;
-  padding: 20px;
-}
-
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-}
-
-.navbar a {
-  text-decoration: none;
-  font-size: 40px;
-  color: #fff;
-  margin: 0px 20px;
-  padding: 5px;
-  text-align: center;
-}
-
-a:hover {
-  border-bottom: 3px #000 solid;
-  color: black;
-}
-
-.logo {
-  font-size: 40px;
-}
-
-.container .grid {
+.container {
   display: grid;
-  max-height: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 auto;
-  overflow: auto;
+  grid-gap: 2%;
+  height: 100vh;
+
+  grid-template-columns: repeat(auto-fit, 1fr);
+
+  grid-template-areas:
+    "header"
+    "navbar1"
+    "navbar2"
+    "main"
+    "footer";
 }
 
-h2 {
+.container header {
+  display: grid;
+  grid-area: header;
+  background-color: black;
   color: #fff;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  font-size: 200px;
-  margin-top: -2200px;
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  justify-content: space-between;
+  align-content: center;
+
+  background: url(/images/code1400.jpg) center;
+  background-size: cover;
+  background-position: center;
+  }
+    
+header p {
+  font-size: 1.5rem;
+}
+.container nav.home {
+  display: flex;
+  background-color: black;
+  color: #fff;
+  grid-area: navbar1;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container nav.portfolio {
+  display: flex;
+  grid-area: navbar2;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 1%;
+  grid-gap: 20px;
+  color: #fff;
+}
+
+.item1 {
   text-align: center;
 }
 
-p {
-  color: #fff;
-  font-size: 120px;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  margin-top: -1200px;
+.item2 {
   text-align: center;
 }
 
-.form {
-  overflow: hidden;
+.item3 {
+  text-align: center;
+}
+.container footer {
+  display: flex;
+  grid-area: footer;
+  background-color: black;
+  color: #fff;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-areas:
+      "header header"
+      "navbar1 navbar2"
+      "main main"
+      "footer footer";
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    grid-template-areas:
+      "header header header header"
+      "navbar1 navbar1 navbar2 navbar2"
+      "main main main main"
+      "footer footer footer footer";
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    grid-template-areas:
+      "header header header header header header"
+      "navbar1 navbar1 navbar1 navbar2 navbar2 navbar2"
+      "main main main main main main"
+      "footer footer footer footer footer footer";
+  }
 }
