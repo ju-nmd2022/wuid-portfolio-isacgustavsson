@@ -7,8 +7,8 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #00dbde;
-  background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
+  background-color: #a9c9ff;
+  background-image: linear-gradient(90deg, #a9c9ff 0%, #ffbbec 100%);
 }
 
 .container {
@@ -82,7 +82,7 @@ a:hover {
 }
 
 .hero .foodimages p {
-    max-width: 25ch;
+  max-width: 25ch;
 }
 
 h2 {
