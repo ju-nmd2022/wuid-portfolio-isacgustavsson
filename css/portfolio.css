@@ -2,129 +2,142 @@
 
 * {
   box-sizing: border-box;
-  font-family: "Roboto", "sans-serif";
+  font-family: "Roboto", sans-serif;
 }
 
 html {
   scroll-behavior: smooth;
-  background-color: #4158d0;
-  background-image: linear-gradient(
-    90deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
-  );
+  background-color: #a9c9ff;
+  background-image: linear-gradient(90deg, #a9c9ff 0%, #ffbbec 100%);
 }
 
 .container {
-  display: grid;
-  grid-gap: 2%;
   height: 100vh;
 
-  grid-template-columns: repeat(auto-fit, 1fr);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(autofill, minmax(200px, 1fr));
 
   grid-template-areas:
     "header"
-    "navbar1"
-    "navbar2"
-    "main"
+    "content"
     "footer";
 }
 
 .container header {
-  display: grid;
+  border-radius: 10px;
   grid-area: header;
-  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   color: #fff;
-  border-radius: 20px;
-  padding: 4rem 2rem;
-  justify-content: space-between;
-  align-content: center;
 
   background: url("../images/code1400.jpg") center;
   background-size: cover;
 }
 
-header p {
-  font-size: 1.5rem;
+h1 {
+  font-size: 2rem;
+  padding-left: 1rem;
 }
-.container nav.home {
-  display: flex;
-  background-color: black;
-  color: #fff;
-  grid-area: navbar1;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-}
+
 a {
-  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
   color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
   color: yellow;
 }
 
-.container nav.portfolio {
+.container .content {
+  grid-area: content;
   display: flex;
-  grid-area: navbar2;
-  background-color: black;
-  color: #fff;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-left: 1em;
+  padding-right: 1em;
   border-radius: 10px;
+  color: #fff;
+  gap: 10px;
+}
+
+img {
+  max-width: 50vw;
+}
+
+.card-1 {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project-cards p {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+
+.card-2 {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-3 {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-4 {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card-5 {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container footer {
+  grid-area: footer;
+  display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  color: #fff;
+  background-color: black;
+}
+
+h4 {
   font-size: 1.5rem;
 }
 
-.container main {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  padding: 1%;
-  grid-gap: 20px;
-  color: #fff;
-}
-
-.item1 {
-  text-align: center;
-}
-
-.item2 {
-  text-align: center;
-}
-
-.item3 {
-  text-align: center;
-}
-.container footer {
-  display: flex;
-  grid-area: footer;
-  background-color: black;
-  color: #fff;
-  border-radius: 10px;
-  justify-content: center;
-  align-items: center;
-}
-
-@media (min-width: 768px) {
-  .container {
-    grid-template-areas:
-      "header header"
-      "navbar1 navbar2"
-      "main main"
-      "footer footer";
-  }
+.container {
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
 }
 
 @media (min-width: 992px) {
   .container {
     grid-template-areas:
       "header header header header"
-      "navbar1 navbar1 navbar2 navbar2"
-      "main main main main"
+      "content content content content"
       "footer footer footer footer";
   }
 }
@@ -133,8 +146,7 @@ a:hover {
   .container {
     grid-template-areas:
       "header header header header header header"
-      "navbar1 navbar1 navbar1 navbar2 navbar2 navbar2"
-      "main main main main main main"
-      "footer footer footer footer footer footer";
+      "content content content content content content"
+      "footer footer footer footer";
   }
 }
