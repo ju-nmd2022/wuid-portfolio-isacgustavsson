@@ -64,38 +64,39 @@ a:hover {
 }
 
 .hero img {
-  max-width: 350px;
+  max-width: 65vw;
 }
 
 .hero .buildingimages {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2em;
 }
 
-.hero .foodimages {
+.foodimages {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
 }
 
-.hero .foodimages p {
-  max-width: 25ch;
-}
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 h3 {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  text-align: center;
 }
 
 p {
   font-size: 1.5rem;
-  align-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .container footer {
