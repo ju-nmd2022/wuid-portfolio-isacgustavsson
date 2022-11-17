@@ -17,7 +17,6 @@ html {
 }
 
 .container {
-
   display: grid;
   grid-gap: 2em;
   grid-template-columns: repeat(autofill, minmax(200px, 1fr));
@@ -180,6 +179,10 @@ img {
 
 h4 {
   font-size: 2rem;
+}
+
+.jumplink {
+  text-align: center;
 }
 
 @media (min-width: 768x) {
