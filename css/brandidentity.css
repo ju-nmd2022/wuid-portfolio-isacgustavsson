@@ -65,10 +65,11 @@ img {
   max-width: 350px;
 }
 
-.content-1 p {
+p {
   color: #fff;
-  font-size: 1em;
-  padding-right: 1rem;
+  font-size: 1.3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .content-1 {
