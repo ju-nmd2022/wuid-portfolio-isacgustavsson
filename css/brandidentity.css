@@ -17,7 +17,6 @@ html {
 }
 
 .container {
-  height: 100vh;
 
   display: grid;
   grid-gap: 2em;
@@ -25,7 +24,12 @@ html {
 
   grid-template-areas:
     "header"
-    "content"
+    "content-1"
+    "content-2"
+    "content-3"
+    "content-4"
+    "content-5"
+    "content-6"
     "footer";
 }
 
@@ -58,93 +62,127 @@ a:hover {
   color: yellow;
 }
 
-.container .content {
-  grid-area: content;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-left: 1em;
-  padding-right: 1em;
-  border-radius: 10px;
-  color: #fff;
-  grid-gap: 1em;
-}
-
 img {
-  max-width: 50vw;
+  max-width: 350px;
 }
 
-.project-cards p {
+.content-1 p {
   color: #fff;
   font-size: 1em;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
-  padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.coffeetablebook {
-  width: 65vw;
+.content-1 {
+  grid-area: content-1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
+  text-align: flex-start;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.card-2 {
-  width: 65vw;
+.content-2 {
+  grid-area: content-2;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: flex-start;
+  justify-content: center;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.card-3 {
-  width: 65vw;
+.content-3 {
+  grid-area: content-3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: flex-start;
+  justify-content: center;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.card-4 {
-  width: 65vw;
+.content-4 {
+  grid-area: content-4;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: flex-start;
+  justify-content: center;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.sapling-card {
-  text-align: center;
+.content-5 {
+  grid-area: content-5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: flex-start;
+  justify-content: center;
+  color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
-
-  text-align: center;
-  width: 65vw;
-  padding-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-a:hover p {
-  color: yellow;
+.content-6 {
+  grid-area: content-6;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: start;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .container footer {
   grid-area: footer;
   display: flex;
   justify-content: center;
-  align-items: center;
   border-radius: 10px;
   color: #fff;
   background-color: black;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768x) {
   .container {
     grid-template-areas:
       "header header header header"
