@@ -40,6 +40,35 @@ html {
   background-position: center;
 }
 
+header h1 {
+  position: relative;
+
+  animation-duration: 785ms;
+
+  animation-name: glitch;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate-reverse;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.01em 0.01em 0.01em #fc00ff, -0.01em -0.01em 0.01em #00dbde,
+      0.01em 0.02em 0.01em #fc00ff;
+  }
+
+  50% {
+    text-shadow: 0.03em 0.02em 0.02em #fc00ff, -0.03em -0.02em 0.02em #00dbde,
+      0.02em 0.03em 0.02em #fc00ff;
+  }
+
+  100% {
+    text-shadow: 0.05em 0.03em 0.03em #fc00ff, -0.05em -0.03em 0.03em #00dbde,
+      0.03em 0.04em 0.03em #fc00ff;
+  }
+}
+
 a {
   font-size: 1.5rem;
   color: #fff;
