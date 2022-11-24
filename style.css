@@ -40,6 +40,56 @@ html {
   background-position: center;
 }
 
+header {
+  animation-name: dissolve;
+
+  animation-duration: 20s;
+
+  animation-iteration-count: infinite;
+}
+
+@keyframes dissolve {
+  0% {
+    background-image: url(/images/neonskull.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+  }
+
+  25% {
+    background-image: url(/images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000;
+  }
+
+  50% {
+    background-image: url(/images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
+
+  75% {
+    background-image: url(/images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000;
+  }
+
+  100% {
+    background-image: url(/images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
+}
+
 /* glitch animation */
 
 header h1 {
@@ -94,10 +144,12 @@ a:hover {
 
 h2 {
   font-size: 2rem;
+  text-align: center;
 }
 
 p {
   font-size: 1.5rem;
+  padding: 1rem;
 }
 
 .container footer {
