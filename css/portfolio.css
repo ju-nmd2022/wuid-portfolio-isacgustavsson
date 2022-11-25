@@ -31,14 +31,68 @@ html {
   flex-direction: column;
   justify-content: space-between;
   color: #fff;
-  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 2rem;
 
   background: url("../images/code1400.jpg") center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  animation-name: glitchskull;
+
+  animation-duration: 0.069s;
+
+  animation-iteration-count: 20;
+
+  animation-timing-function: linear;
+}
+
+@keyframes glitchskull {
+  0% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+  }
+
+  25% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000;
+  }
+
+  50% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
+
+  75% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000;
+  }
+
+  100% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   padding-left: 1rem;
 
   position: relative;

@@ -38,6 +38,89 @@ html {
   background-size: cover;
 }
 
+header {
+  animation-name: glitchskull;
+
+  animation-duration: 0.069s;
+
+  animation-iteration-count: 20;
+
+  animation-timing-function: linear;
+
+}
+
+@keyframes glitchskull {
+  0% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #000;
+  }
+
+  25% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000;
+  }
+
+  50% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
+
+  75% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #000;
+  }
+
+  100% {
+    background-image: url(./images/neonskull.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #000;
+  }
+}
+
+header h1 {
+  position: relative;
+
+  animation-duration: 750ms;
+
+  animation-name: glitch;
+
+  animation-iteration-count: infinite;
+
+  animation-direction: alternate-reverse;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.02em 0.01em 0.02em #ff10f0, -0.02em -0.01em 0.02em #11ffee,
+      0.01em 0.02em 0.01em #ff10f0;
+  }
+
+  50% {
+    text-shadow: 0.04em 0.02em 0.04em #ff10f0, -0.04em -0.02em 0.04em #11ffee,
+      0.02em 0.03em 0.02em #ff10f0;
+  }
+
+  100% {
+    text-shadow: 0.06em 0.03em 0.06em #ff10f0, -0.06em -0.03em 0.06em #11ffee,
+      0.03em 0.04em 0.03em #ff10f0;
+  }
+}
+
+
 h1 {
   font-size: 2rem;
   padding-left: 1rem;
