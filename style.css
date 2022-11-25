@@ -29,12 +29,11 @@ html {
   grid-area: header;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   background-color: #000;
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 
   background: url("./images/code1400.jpg") right;
   background-size: cover;
