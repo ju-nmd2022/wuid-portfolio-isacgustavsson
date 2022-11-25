@@ -72,13 +72,10 @@ h1 {
     text-shadow: 0.05em 0.03em 0.03em #fc00ff, -0.05em -0.03em 0.03em #00dbde,
       0.03em 0.04em 0.03em #fc00ff;
   }
-
 }
 
 header a {
-  
   font-size: 2rem;
-
 }
 
 a {
@@ -112,42 +109,10 @@ img {
 .project-cards p {
   color: #fff;
   font-size: 1em;
-  padding-top: 2rem;
-  padding-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.coffeetablebook {
-  width: 65vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.card-2 {
-  width: 65vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.card-3 {
-  width: 65vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-.card-4 {
-  width: 65vw;
-  background-color: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  text-align: center;
-  padding-top: 1rem;
 }
 
 .sapling-card {
@@ -157,7 +122,59 @@ img {
 
   text-align: center;
   width: 65vw;
-  padding-top: 1rem;
+  padding-top: 2rem;
+}
+
+.coffeetablebook {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.stylization-card {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.pumpkin-card {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.pizza-card {
+  width: 65vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.figma-card {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  text-align: center;
+  width: 65vw;
+  padding-top: 2rem;
+}
+
+.game-card {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+
+  text-align: center;
+  width: 65vw;
+  padding-top: 2rem;
 }
 
 a:hover p {

@@ -48,7 +48,6 @@ header {
   animation-iteration-count: infinite;
 
   animation-timing-function: ease-in-out;
-  
 }
 
 @keyframes dissolve {
@@ -98,7 +97,7 @@ header {
 header h1 {
   position: relative;
 
-  animation-duration: 785ms;
+  animation-duration: 750ms;
 
   animation-name: glitch;
 
@@ -109,18 +108,18 @@ header h1 {
 
 @keyframes glitch {
   0% {
-    text-shadow: 0.01em 0.01em 0.01em #fc00ff, -0.01em -0.01em 0.01em #00dbde,
-      0.01em 0.02em 0.01em #fc00ff;
+    text-shadow: 0.02em 0.01em 0.02em #ff10f0, -0.02em -0.01em 0.02em #11ffee,
+      0.01em 0.02em 0.01em #ff10f0;
   }
 
   50% {
-    text-shadow: 0.03em 0.02em 0.02em #fc00ff, -0.03em -0.02em 0.02em #00dbde,
-      0.02em 0.03em 0.02em #fc00ff;
+    text-shadow: 0.04em 0.02em 0.04em #ff10f0, -0.04em -0.02em 0.04em #11ffee,
+      0.02em 0.03em 0.02em #ff10f0;
   }
 
   100% {
-    text-shadow: 0.05em 0.03em 0.03em #fc00ff, -0.05em -0.03em 0.03em #00dbde,
-      0.03em 0.04em 0.03em #fc00ff;
+    text-shadow: 0.06em 0.03em 0.06em #ff10f0, -0.06em -0.03em 0.06em #11ffee,
+      0.03em 0.04em 0.03em #ff10f0;
   }
 }
 
