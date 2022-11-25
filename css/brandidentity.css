@@ -48,12 +48,11 @@ header {
   animation-iteration-count: 20;
 
   animation-timing-function: linear;
-
 }
 
 @keyframes glitchskull {
   0% {
-    background-image: url(./images/neonskull.png);
+    background-image: url(../images/neonskull.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -61,7 +60,7 @@ header {
   }
 
   25% {
-    background-image: url(./images/neonskull.png);
+    background-image: url(../images/neonskull.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -69,7 +68,7 @@ header {
   }
 
   50% {
-    background-image: url(./images/neonskull.png);
+    background-image: url(../images/neonskull.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -77,7 +76,7 @@ header {
   }
 
   75% {
-    background-image: url(./images/neonskull.png);
+    background-image: url(../images/neonskull.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
@@ -85,14 +84,13 @@ header {
   }
 
   100% {
-    background-image: url(./images/neonskull.png);
+    background-image: url(../images/neonskull.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #000;
   }
 }
-
 
 h1 {
   font-size: 2rem;
